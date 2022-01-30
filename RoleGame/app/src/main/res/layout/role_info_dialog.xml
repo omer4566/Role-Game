@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/cardback"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/roleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role Name"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/roleAbilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/roleName"
+        app:layout_constraintStart_toStartOf="@+id/roleName"
+        app:layout_constraintTop_toBottomOf="@+id/roleName" />
+
+    <TextView
+        android:id="@+id/roleMechanics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/roleAbilities"
+        app:layout_constraintStart_toStartOf="@+id/roleAbilities"
+        app:layout_constraintTop_toBottomOf="@+id/roleAbilities" />
+
+    <TextView
+        android:id="@+id/roleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_type_1"
+        android:padding="10dp"
+        android:text="@string/description"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_button"
+        app:layout_constraintEnd_toEndOf="@+id/roleMechanics"
+        app:layout_constraintStart_toStartOf="@+id/roleMechanics"
+        app:layout_constraintTop_toBottomOf="@+id/roleMechanics" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

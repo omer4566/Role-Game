@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rolegame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoleGame">
+        <activity
+            android:name=".Guide"
+            android:label="Guide"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Game.WinningLayout"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Game.JudgeTime"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Game.VoteTime"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Game.Discussion"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Game.Morning"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Game.NightShow"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Game.Night"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Game.LoadGame"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditRole"
+            android:label="Edit Role"
+            android:parentActivityName=".RoleManager"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditProfile"
+            android:label="Edit Profile"
+            android:parentActivityName=".Preparation"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NewRole"
+            android:label="New Role"
+            android:parentActivityName=".RoleManager"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RoleManager"
+            android:label="Role Manager"
+            android:parentActivityName=".Preparation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ProfileList"
+            android:label="Profile List"
+            android:parentActivityName=".Preparation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NewProfile"
+            android:label="New Profile"
+            android:parentActivityName=".Preparation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Preparation"
+            android:label="Preparation"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PreMain"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/ClearTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

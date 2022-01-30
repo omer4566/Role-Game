@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/people"
+        android:icon="@drawable/ic_people"
+        android:title="profile list"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add_white"
+        android:title="add profile"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+</menu>
